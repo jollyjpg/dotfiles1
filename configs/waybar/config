@@ -1,0 +1,15 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["battery", "clock"],
+    "margin-top": 5,
+    "margin-left": 50,
+    "margin-right": 50,
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["󰂎", "󰁼", "󰁿", "󰂁", "󰁹"]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    }
+}

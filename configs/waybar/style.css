@@ -1,0 +1,67 @@
+* {
+  /* General taskbar font, I like maple mono ^-^*/
+  font-family: FantasqueSansM Nerd Font Mono;
+  border-radius: 8;
+  font-size: 16px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  /* Linear gradients are used because it makes less harsh rounded border radius, gtk bug :p */
+  background-image: linear-gradient(to bottom, #241924 100%);
+  border-radius: 8px;
+  padding: 0px;
+  border-style: none;
+}
+
+#battery,
+#clock,
+#workspaces {
+  background-image: linear-gradient(to bottom, #302230 100%);
+
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 20px;
+  border-radius: 8px;
+  color: #F8F6F7;
+
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+#clock {
+  margin-right: 6px;
+}
+
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #f8f6f7;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #9d6c9d;
+}
+#workspaces button.focused {
+  color: #b691b6;
+  font-weight: bold;
+}
+#workspaces button.active {
+  color: #b691b6;
+  font-weight: bold;
+}
+#workspaces button.urgent {
+  color: #f8f6f7;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  background-color: #fc4649;
+}
